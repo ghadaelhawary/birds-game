@@ -1,4 +1,4 @@
-// ahmed creation the home page
+//  creation the home page
 $(document).ready(function () {
 
 
