@@ -1,4 +1,4 @@
-///////////////////////////////// Aya/////////////////
+//////////////////////////////////////////////////
 // Loading function
 $(function () {
     // end drag for allimages
@@ -32,7 +32,7 @@ $(function () {
 
 function startGame() {
 
-///////////////////////////////// creation bomb Ahmed,aya,yasmeen in level hard///////////////////////
+///////////////////////////////// creation bomb ///////////////////////
 
     if (level == "Hard") {
         bombID = setInterval(function () {
@@ -81,7 +81,7 @@ function startGame() {
         shot.play();
      })
 
-    /////////////////////////////////Yassmin///////////////////////
+    ////////////////////////////////////////////////////////
     // method for creation the normal birds in random locations 
     function normalBird() {
         let img1 = new Image(200, 200);
@@ -97,7 +97,7 @@ function startGame() {
     normalBird();
     normalBird();
 
-    ///////////////////////handling the timer by Ahmed Said  and Yassmin
+    ///////////////////////handling the timer
     decreaseProgress = 100
     timerID = setInterval(function () {
         if (decreaseProgress < 0) {
@@ -114,7 +114,7 @@ function startGame() {
             $(".move_progress").css({ backgroundColor: "red" })
         }
     }, 700)
-    ///////////////////////////Yassmin
+    ///////////////////////////
     /////creation black birds
     blackID = setInterval(function () {
         let img1 = new Image(200, 200);
@@ -155,7 +155,7 @@ function startGame() {
 
 
 
-    /////////////////////Aya ////////////////////
+    //////////////////// ////////////////////
     //score 
     livesCounter = 30;
     totalscore = 0;
@@ -200,7 +200,7 @@ function startGame() {
     })
 }
 
-////////////////////////////////////Yassmien&Aya/////////////////////////////
+////////////////////////////////////////////////////////////////
 function winEndGame() {
 
     clearInterval(timerID);
